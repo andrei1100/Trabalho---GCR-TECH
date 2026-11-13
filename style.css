@@ -1,0 +1,271 @@
+	/* REQUISITO CSS: CLASSES E IDS */
+    /* REQUISITO CSS 2: BORDAS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REQUISITO CSS: CORES, FONTES E TAMANHOS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+    color: #222;
+    text-align: center; /* Centraliza os textos */
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #0756a5;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* REQUISITO CSS: FORMATAÇÃO DE LINKS */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* REQUISITO CSS: BORDAS */
+/* SEÇÕES */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 1100px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* REQUISITO CSS: POSICIONAMENTO */
+h2 {
+    color: #0756a5;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+/* BANNER */
+.banner {
+     position: relative;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* CATEGORIAS */
+.categoria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.categoria {
+    background-color: #dcecff;
+    color: #0756a5;
+    padding: 25px;
+    width: 200px;
+    border: 1px solid #0756a5;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* LISTAS */
+ol {
+    list-style-position: inside;
+    margin: 15px;
+}
+
+/* REQUISITO CSS: ELEMENTOS FLUTUANTES */
+/* PRODUTOS */
+.produto {
+    float: left;
+    width: 45%;
+    margin: 2%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.limpar-float {
+    clear: both;
+}
+
+/* BOTÕES */
+button {
+    background-color: #0756a5;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #003d78;
+}
+
+/* TABELA */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 12px;
+}
+
+th {
+    background-color: #0756a5;
+    color: white;
+}
+
+/* CARRINHO */
+#listaCarrinho {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 650px;
+}
+
+#listaCarrinho li {
+    background-color: #f1f3f6;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* BOTÃO DE REMOVER PRODUTO */
+.botao-remover {
+    background-color: #d62828;
+    padding: 7px 12px;
+}
+
+.botao-remover:hover {
+    background-color: #a31515;
+}
+
+/* ÁREA DOS CUPONS */
+.area-cupom {
+    background-color: #e8f4ff;
+    border: 2px dashed #0756a5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 500px;
+}
+
+.cupom-destaque {
+    display: inline-block;
+    background-color: #0756a5;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* REQUISITO CSS: ESTILO DE TEXTO */
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #0756a5;
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+
+/* AVISO DE ENVIO DO GTA 6 */
+
+.aviso-entrega-gta {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.aviso-entrega-gta p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aviso-entrega-gta p {
+    font-size: 14px;
+    margin: 5px 0;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCR TECH - Loja de Tecnologia</title>
+
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- REQUISITO HTML: LINKS -->
+    <!-- CABEÇALHO E LINKS DE NAVEGAÇÃO -->
+    <header>
+        <h1>GCR TECH</h1>
+        <p>Sua loja de tecnologia!</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- REQUISITO HTML: IMAGENS -->
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio">
+        <h2>Bem-vindo à GCR TECH</h2>
+        <img src="banner.jpg" alt="Banner da loja" class="banner">
+        <p>Encontre os melhores produtos de tecnologia aqui!</p>
+    </section>
+
+    <!-- CATEGORIAS DA LOJA -->
+    <section id="categorias">
+        <h2>Nossas Categorias</h2>
+
+        <div class="categoria-container">
+            <div class="categoria">Áudio</div>
+            <div class="categoria">Smartwatches</div>
+            <div class="categoria">Informática</div>
+            <div class="categoria">Games</div>
+        </div>
+
+        <!-- REQUISITO HTML: LISTAS -->
+        <!-- Lista de produtos mais vendidos -->
+        <h3>Produtos mais vendidos</h3>
+        <ol>
+            <li>Gta 6 - Pré-venda</li>
+            <li>Ps5</li>
+            <li>Teclado Gamer</li>
+        </ol>
+    </section>
+
+    <!-- PRODUTOS DISPONÍVEIS -->
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="produto">
+            <img src="fone.jpg" alt="Fone Bluetooth">
+            <h3>Fone Bluetooth</h3>
+            <p>R$ 89,90</p>
+            <button onclick="adicionar('Fone Bluetooth', 89.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="smartwatch.jpg" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>R$ 149,90</p>
+            <button onclick="adicionar('Smartwatch', 149.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="teclado gamer.jpg" alt="Teclado Gamer">
+            <h3>Teclado Gamer</h3>
+            <p>R$ 129,90</p>
+            <button onclick="adicionar('Teclado Gamer', 129.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="mouse.jpg" alt="Mouse sem fio">
+            <h3>Mouse sem fio</h3>
+            <p>R$ 59,90</p>
+            <button onclick="adicionar('Mouse sem fio', 59.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="caixa de som.jpg" alt="Caixa de som">
+            <h3>Caixa de som</h3>
+            <p>R$ 99,90</p>
+            <button onclick="adicionar('Caixa de som', 99.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+         <div class="produto">
+            <img src="Ps5.jpg" alt="Ps5">
+            <h3>Ps5</h3>
+            <p>R$ 3500,00</p>
+            <button onclick="adicionar('Ps5', 3500.00)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+         <div class="produto">
+            <img src="controle.jpg" alt="Controle Ps5">
+            <h3>Controle Ps5</h3>
+            <p>R$ 500,00</p>
+            <button onclick="adicionar('Controle Ps5', 500.00)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+<div class="produto produto-gta">
+
+    <span id="statusGta" class="aviso-gta">
+        🔥 PRÉ-VENDA
+    </span>
+
+    <img src="Gta 6.jpg" alt="GTA 6">
+
+    <h3>Grand Theft Auto VI</h3>
+
+    <p class="preco-gta">R$ 450,00</p>
+
+
+    <div class="aviso-entrega-gta">
+        🚨 PRÉ-VENDA!
+
+        <p>
+            Envio somente após o lançamento oficial do jogo.
+        </p>
+    </div>
+
+    <p id="mensagemGta" class="mensagem-gta">
+        Garanta seu GTA 6 na pré-venda!
+    </p>
+
+    <button
+        id="botaoGta"
+        onclick="adicionar('GTA 6', 450.00)">
+        Adicionar à pré-venda
+    </button>
+
+</div>
+
+        <div class="limpar-float"></div>
+    </section>
+
+    <!-- REQUISITO HTML: TABELAS -->
+    <!-- TABELA DE PREÇOS -->
+    <section id="precos">
+        <h2>Tabela de Preços</h2>
+
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Fone Bluetooth</td>
+                <td>R$ 89,90</td>
+            </tr>
+            <tr>
+                <td>Smartwatch</td>
+                <td>R$ 149,90</td>
+            </tr>
+            <tr>
+                <td>Teclado Gamer</td>
+                <td>R$ 129,90</td>
+            </tr>
+            <tr>
+                <td>Mouse sem fio</td>
+                <td>R$ 59,90</td>
+            </tr>
+            <tr>
+                <td>Caixa de som</td>
+                <td>R$ 99,90</td>
+            </tr>
+            <tr>
+                <td>Ps5</td>
+                <td>R$ 3500,00</td>
+            </tr>
+
+            <tr>
+                <td>Controle Ps5</td>
+                <td>R$ 500,00</td>
+            </tr>
+
+            <tr>
+                <td>Gta 6</td>
+                <td>R$ 450,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- CARRINHO DE COMPRAS -->
+    <section id="carrinho">
+        <h2>Meu Carrinho</h2>
+
+        <ul id="listaCarrinho"></ul>
+
+        <p>Subtotal: R$ <span id="subtotal">0,00</span></p>
+        <p>Desconto: R$ <span id="valorDesconto">0,00</span></p>
+        <h3>Total: R$ <span id="total">0,00</span></h3>
+
+        <!-- CUPOM DE DESCONTO -->
+        <div class="area-cupom">
+            <h3>Cupons disponíveis</h3>
+            <p class="cupom-destaque">GCR10</p>
+            <p>Use este cupom e ganhe 10% de desconto na sua compra!</p>
+
+            <label for="cupom">Digite seu cupom:</label>
+            <input type="text" id="cupom" placeholder="Exemplo: GCR10">
+
+            <button onclick="aplicarCupom()">Aplicar cupom</button>
+            <p id="mensagemCupom"></p>
+        </div>
+
+        <button onclick="comprar()">Finalizar compra</button>
+    </section>
+
+    <!-- REQUISITO HTML: FORMULÁRIOS -->
+    <!-- FORMULÁRIO -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>GCR TECH - Todos os direitos reservados.</p>
+        <a href="#inicio">Voltar ao início</a>
+    </footer>
+
+    <!-- Conexão com o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
